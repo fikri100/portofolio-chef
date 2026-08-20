@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html class="dark scroll-smooth" lang="id">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Spesialisasi Kuliner & Layanan Private Chef | Chef Muhammad Mirza</title>
+    <meta name="description" content="Layanan spesialisasi Chef Muhammad Mirza: Exclusive Private Chef untuk fine dining, Commercial Food Styling untuk iklan & media, Konsultasi Teknis Kuliner Mondelez, dan Live Cooking Demo."/>
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#e9c176",
+                        "primary-container": "#c5a059",
+                        "on-primary": "#412d00",
+                        "surface": "#131313",
+                        "surface-low": "#1b1c1c",
+                        "surface-high": "#2a2a2a",
+                        "surface-variant": "#353535",
+                        "on-surface": "#e4e2e1",
+                        "on-surface-variant": "#d1c5b4",
+                        "outline": "#9a8f80",
+                        "outline-variant": "#4e4639"
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="styles.css"/>
+</head>
+<body class="bg-surface text-on-surface min-h-screen flex flex-col antialiased selection:bg-primary-container selection:text-on-primary">
+
+    <!-- Top Navigation Header -->
+    <header class="fixed top-0 w-full z-50 glass-header flex justify-between items-center px-6 md:px-16 h-20 transition-all duration-300">
+        <a href="index.html" class="flex items-center gap-3 group">
+            <div class="w-10 h-10 rounded-full border border-primary/50 flex items-center justify-center bg-surface-high group-hover:border-primary transition-colors">
+                <span class="material-symbols-outlined text-primary text-xl">restaurant</span>
+            </div>
+            <div>
+                <span class="font-serif font-bold text-xl tracking-wider text-primary block leading-none">M. MIRZA</span>
+                <span class="text-[10px] tracking-widest uppercase text-on-surface-variant block mt-1">Food Stylist • Private Chef • Consultant</span>
+            </div>
+        </a>
+
+        <!-- Desktop Links -->
+        <nav class="hidden md:flex items-center gap-8 text-sm uppercase tracking-wider font-medium">
+            <a href="index.html" class="nav-link desktop-nav-link text-on-surface-variant hover:text-primary transition-colors">Beranda</a>
+            <a href="tentang-saya.html" class="nav-link desktop-nav-link text-on-surface-variant hover:text-primary transition-colors">Tentang Saya</a>
+            <a href="spesialisasi.html" class="nav-link desktop-nav-link text-primary font-semibold hover:text-primary transition-colors">Spesialisasi</a>
+            <a href="galeri.html" class="nav-link desktop-nav-link text-on-surface-variant hover:text-primary transition-colors">Galeri</a>
+            <a href="kontak.html" class="nav-link desktop-nav-link text-on-surface-variant hover:text-primary transition-colors">Layanan & Kontak</a>
+        </nav>
+
+        <div class="hidden md:flex items-center gap-4">
+            <a href="kontak.html" class="bg-primary text-on-primary text-xs uppercase font-bold tracking-widest px-5 py-2.5 rounded hover:brightness-110 active:scale-95 transition-all">
+                Booking Chef
+            </a>
+        </div>
+    </header>
+
+    <!-- Mobile Bottom Navigation Bar -->
+    <nav class="md:hidden fixed bottom-0 left-0 w-full bg-surface-low/95 backdrop-blur-lg border-t border-outline-variant py-2 px-3 z-50 flex justify-around items-center">
+        <a href="index.html" class="nav-link bottom-nav-link flex flex-col items-center justify-center text-on-surface-variant hover:text-primary transition-colors active:scale-95">
+            <span class="material-symbols-outlined text-xl">home</span>
+            <span class="text-[10px] uppercase tracking-wider mt-0.5">Beranda</span>
+        </a>
+        <a href="tentang-saya.html" class="nav-link bottom-nav-link flex flex-col items-center justify-center text-on-surface-variant hover:text-primary transition-colors active:scale-95">
+            <span class="material-symbols-outlined text-xl">person</span>
+            <span class="text-[10px] uppercase tracking-wider mt-0.5">Tentang</span>
+        </a>
+        <a href="spesialisasi.html" class="nav-link bottom-nav-link flex flex-col items-center justify-center text-on-surface-variant hover:text-primary transition-colors active:scale-95">
+            <span class="material-symbols-outlined text-xl">star</span>
+            <span class="text-[10px] uppercase tracking-wider mt-0.5">Spesialisasi</span>
+        </a>
+        <a href="galeri.html" class="nav-link bottom-nav-link flex flex-col items-center justify-center text-on-surface-variant hover:text-primary transition-colors active:scale-95">
+            <span class="material-symbols-outlined text-xl">restaurant</span>
+            <span class="text-[10px] uppercase tracking-wider mt-0.5">Galeri</span>
+        </a>
+        <a href="kontak.html" class="nav-link bottom-nav-link flex flex-col items-center justify-center text-on-surface-variant hover:text-primary transition-colors active:scale-95">
+            <span class="material-symbols-outlined text-xl">mail</span>
+            <span class="text-[10px] uppercase tracking-wider mt-0.5">Kontak</span>
+        </a>
+    </nav>
+
+    <main class="flex-grow pt-24 pb-24">
+        <!-- Hero Header -->
+        <section class="w-full max-w-5xl mx-auto px-6 text-center py-12 reveal">
+            <span class="text-xs font-semibold uppercase tracking-widest text-primary block mb-3">Culinary Distinction</span>
+            <h1 class="font-serif text-4xl md:text-6xl font-bold text-on-surface mb-6 leading-tight">
+                Spesialisasi & Layanan Unggulan
+            </h1>
+            <p class="text-base md:text-lg text-on-surface-variant max-w-3xl mx-auto leading-relaxed">
+                Menggabungkan pengalaman <strong class="text-primary font-bold">Private Chef</strong> eksklusif, estetika visual seni kamera, serta pengetahuan mendalam olahan bahan makanan dari rekam jejak industri perhotelan bintang lima lebih dari 18 tahun.
+            </p>
+        </section>
+
+        <!-- 4 Pillars of Distinction -->
+        <section class="w-full max-w-6xl mx-auto px-6 md:px-12 py-12 space-y-20">
+
+            <!-- Pillar 1: Exclusive Private Chef -->
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-12 items-center reveal">
+                <div class="md:col-span-6 order-2 md:order-1">
+                    <div class="inline-flex items-center gap-2 px-3 py-1 bg-primary/20 border border-primary/50 rounded-full text-xs font-semibold text-primary mb-4 uppercase tracking-wider">
+                        <span class="material-symbols-outlined text-sm">dinner_dining</span>
+                        <span>Exclusive Fine Dining</span>
+                    </div>
+                    <h2 class="font-serif text-3xl font-bold text-on-surface mb-4">1. Exclusive Private Chef Service</h2>
+                    <p class="text-base text-on-surface-variant leading-relaxed mb-6">
+                        Menyediakan layanan <strong class="text-primary font-bold">Private Chef</strong> pribadi untuk jamuan makan malam fine dining intim di rumah, vila, atau venue privat Anda. Setiap racikan resep dirancang khusus (<em class="italic text-primary">Bespoke Multi-Course Tasting Menu</em>) dengan standar pengolahan langsung di tempat dan pelayanan perhotelan bintang lima.
+                    </p>
+                    <ul class="space-y-3 text-sm text-on-surface-variant mb-8">
+                        <li class="flex items-center gap-3">
+                            <span class="material-symbols-outlined text-primary">check_circle</span>
+                            <span>Multi-Course Fine Dining Menu (Customized Tasting Menu)</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <span class="material-symbols-outlined text-primary">check_circle</span>
+                            <span>Pemilihan Bahan Premium Segar & Persiapan Langsung di Tempat</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <span class="material-symbols-outlined text-primary">check_circle</span>
+                            <span>Pelayanan Jamuan Intim VIP, Family Gathering & Private Celebration</span>
+                        </li>
+                    </ul>
+                    <a href="kontak.html" class="inline-block bg-primary text-on-primary font-bold text-xs uppercase tracking-widest px-6 py-3 rounded hover:brightness-110 transition-all">
+                        Reservasi Private Chef
+                    </a>
+                </div>
+                <div class="md:col-span-6 order-1 md:order-2">
+                    <div class="relative rounded-xl overflow-hidden border border-outline-variant shadow-2xl">
+                        <img src="https://images.unsplash.com/photo-1550966871-3ed3cdb5ed0c?auto=format&fit=crop&w=1000&q=80" 
+                             alt="Exclusive Private Chef Dining" 
+                             class="w-full h-[400px] object-cover">
+                        <div class="absolute inset-0 bg-gradient-to-t from-surface via-transparent to-transparent"></div>
+                        <div class="absolute bottom-4 left-4 right-4 p-4 glass-panel rounded-lg">
+                            <span class="text-xs font-serif italic text-primary">"Pengalaman fine dining restoran mewah yang dihadirkan khusus di ruang privat Anda."</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pillar 2: Commercial Food Styling -->
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-12 items-center reveal delay-100">
+                <div class="md:col-span-6">
+                    <div class="relative rounded-xl overflow-hidden border border-outline-variant shadow-2xl">
+                        <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=1000&q=80" 
+                             alt="Commercial Food Styling Shoot" 
+                             class="w-full h-[400px] object-cover">
+                        <div class="absolute inset-0 bg-gradient-to-t from-surface via-transparent to-transparent"></div>
+                        <div class="absolute bottom-4 left-4 right-4 p-4 glass-panel rounded-lg">
+                            <span class="text-xs font-serif italic text-primary">"Kamera menangkap detail mikro, food stylist memastikan kesempurnaan visual."</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="md:col-span-6">
+                    <div class="inline-flex items-center gap-2 px-3 py-1 bg-surface-variant border border-outline rounded-full text-xs font-semibold text-on-surface-variant mb-4 uppercase tracking-wider">
+                        <span class="material-symbols-outlined text-sm">photo_camera</span>
+                        <span>Fokus Media Visual</span>
+                    </div>
+                    <h2 class="font-serif text-3xl font-bold text-on-surface mb-4">2. Commercial Food Styling</h2>
+                    <p class="text-base text-on-surface-variant leading-relaxed mb-6">
+                        Memiliki spesialisasi tingkat tinggi dalam menata visual makanan agar terlihat sangat menggugah selera (<em class="italic text-primary">tempting</em>) saat difoto atau direkam kamera studio. Penataan memperhitungkan pencahayaan, ketahanan bahan di bawah lampu sorot, hingga komposisi mikro (<em class="italic text-primary">tweezer precision</em>).
+                    </p>
+                    <ul class="space-y-3 text-sm text-on-surface-variant mb-8">
+                        <li class="flex items-center gap-3">
+                            <span class="material-symbols-outlined text-primary">check_circle</span>
+                            <span>Penataan iklan TV commercial, baliho, dan foto kemasan (<em class="italic text-primary">packaging</em>)</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <span class="material-symbols-outlined text-primary">check_circle</span>
+                            <span>Teknologi perlakuan kesegaran bahan visual & glazzing artistik</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <span class="material-symbols-outlined text-primary">check_circle</span>
+                            <span>Kolaborasi erat bersama Commercial Photographer & Art Director</span>
+                        </li>
+                    </ul>
+                    <a href="kontak.html" class="inline-block border border-outline text-on-surface hover:border-primary hover:text-primary font-bold text-xs uppercase tracking-widest px-6 py-3 rounded transition-all">
+                        Booking Food Stylist
+                    </a>
+                </div>
+            </div>
+
+            <!-- Pillar 3: Technical Chef Consultant -->
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-12 items-center reveal">
+                <div class="md:col-span-6 order-2 md:order-1">
+                    <div class="inline-flex items-center gap-2 px-3 py-1 bg-surface-variant border border-outline rounded-full text-xs font-semibold text-on-surface-variant mb-4 uppercase tracking-wider">
+                        <span class="material-symbols-outlined text-sm">science</span>
+                        <span>Mondelez Track Record</span>
+                    </div>
+                    <h2 class="font-serif text-3xl font-bold text-on-surface mb-4">3. Technical Chef Consultant</h2>
+                    <p class="text-base text-on-surface-variant leading-relaxed mb-6">
+                        Pengalaman selama 10 bulan sebagai Technical Chef Consultant di <strong class="text-on-surface font-bold">Mondelez</strong> memberikan pemahaman mendalam mengenai pengaplikasian bahan baku, uji kualitas sensory, formulasi resep industri, serta edukasi teknis kuliner untuk kebutuhan B2B & R&D produk makanan.
+                    </p>
+                    <ul class="space-y-3 text-sm text-on-surface-variant mb-8">
+                        <li class="flex items-center gap-3">
+                            <span class="material-symbols-outlined text-primary">check_circle</span>
+                            <span>Formulasi & pengembangan resep baru (<em class="italic text-primary">Recipe Development</em>)</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <span class="material-symbols-outlined text-primary">check_circle</span>
+                            <span>Konsultasi teknis bahan olahan & aplikasi rasa industri</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <span class="material-symbols-outlined text-primary">check_circle</span>
+                            <span>Standarisasi SOP Dapur & Efisiensi Operasional Restoran</span>
+                        </li>
+                    </ul>
+                    <a href="kontak.html" class="inline-block border border-outline text-on-surface hover:border-primary hover:text-primary font-bold text-xs uppercase tracking-widest px-6 py-3 rounded transition-all">
+                        Konsultasi Produk
+                    </a>
+                </div>
+                <div class="md:col-span-6 order-1 md:order-2">
+                    <div class="relative rounded-xl overflow-hidden border border-outline-variant shadow-2xl">
+                        <img src="https://images.unsplash.com/photo-1556910103-1c02745aae4d?auto=format&fit=crop&w=1000&q=80" 
+                             alt="Technical Chef Consulting" 
+                             class="w-full h-[400px] object-cover">
+                        <div class="absolute inset-0 bg-gradient-to-t from-surface via-transparent to-transparent"></div>
+                        <div class="absolute bottom-4 left-4 right-4 p-4 glass-panel rounded-lg">
+                            <span class="text-xs font-serif italic text-primary">"Mondelez Consulting Experience: Formulasi presisi & keselarasan cita rasa."</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pillar 4: Public Live Cooking Demo & Catering -->
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-12 items-center reveal delay-100">
+                <div class="md:col-span-6">
+                    <div class="relative rounded-xl overflow-hidden border border-outline-variant shadow-2xl">
+                        <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=1000&q=80" 
+                             alt="Public Cooking Demo PRJ Indofood" 
+                             class="w-full h-[400px] object-cover">
+                        <div class="absolute inset-0 bg-gradient-to-t from-surface via-transparent to-transparent"></div>
+                        <div class="absolute bottom-4 left-4 right-4 p-4 glass-panel rounded-lg">
+                            <span class="text-xs font-serif italic text-primary">"Pengalaman 4 tahun berturut-turut memimpin demo masak di Pekan Raya Jakarta bersama Indofood."</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="md:col-span-6">
+                    <div class="inline-flex items-center gap-2 px-3 py-1 bg-surface-variant border border-outline rounded-full text-xs font-semibold text-on-surface-variant mb-4 uppercase tracking-wider">
+                        <span class="material-symbols-outlined text-sm">groups</span>
+                        <span>PT Indofood Event Track</span>
+                    </div>
+                    <h2 class="font-serif text-3xl font-bold text-on-surface mb-4">4. Live Cooking Demo & Event Culinary</h2>
+                    <p class="text-base text-on-surface-variant leading-relaxed mb-6">
+                        Memiliki publik speaking kuliner yang lugas dan atraktif. Dipercaya selama 4 tahun berturut-turut (2010–2013) oleh <strong class="text-on-surface font-bold">PT Indofood</strong> untuk mengelola panggung demonstrasi memasak (<em class="italic text-primary">cooking demo</em>) di Pekan Raya Jakarta (PRJ Kemayoran), serta berpengalaman menerima katering acara pernikahan dan event besar.
+                    </p>
+                    <ul class="space-y-3 text-sm text-on-surface-variant mb-8">
+                        <li class="flex items-center gap-3">
+                            <span class="material-symbols-outlined text-primary">check_circle</span>
+                            <span>Live Cooking Demo untuk Peluncuran Brand / Event Publik</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <span class="material-symbols-outlined text-primary">check_circle</span>
+                            <span>Manajemen Katering Acara Pernikahan & Gathering Eksklusif</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <span class="material-symbols-outlined text-primary">check_circle</span>
+                            <span>Interaksi Komunikatif & Edukasi Kuliner Publik</span>
+                        </li>
+                    </ul>
+                    <a href="kontak.html" class="inline-block bg-primary text-on-primary font-bold text-xs uppercase tracking-widest px-6 py-3 rounded hover:brightness-110 transition-all">
+                        Booking Event / Demo
+                    </a>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- CTA Section -->
+        <section class="w-full bg-surface-low border-t border-outline-variant py-16 px-6 text-center">
+            <div class="max-w-3xl mx-auto reveal">
+                <h3 class="font-serif text-3xl font-bold text-on-surface mb-4">Ingin Menghadirkan Private Chef di Acara Anda?</h3>
+                <p class="text-sm text-on-surface-variant mb-8">Jadwalkan sesi konsultasi menu fine dining privat atau booking penataan gambar makanan untuk brand Anda.</p>
+                <a href="kontak.html" class="inline-block bg-primary text-on-primary font-bold text-sm uppercase tracking-widest px-10 py-4 rounded hover:brightness-110 transition-all">
+                    Hubungi Chef Mirza
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="w-full bg-surface-low border-t border-outline-variant py-12 px-6 pb-28 md:pb-12">
+        <div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center text-center md:text-left gap-8">
+            <div class="flex flex-col items-center md:items-start">
+                <span class="font-serif font-bold text-xl text-primary block">CHEF MUHAMMAD MIRZA</span>
+                <p class="text-xs text-on-surface-variant mt-1">Commercial Food Stylist • Private Chef • Culinary Consultant</p>
+            </div>
+
+            <div class="flex flex-wrap justify-center items-center gap-4 sm:gap-6 md:gap-8 text-xs uppercase tracking-wider text-on-surface-variant">
+                <a href="index.html" class="hover:text-primary transition-colors">Beranda</a>
+                <a href="tentang-saya.html" class="hover:text-primary transition-colors">Tentang Saya</a>
+                <a href="spesialisasi.html" class="hover:text-primary transition-colors">Spesialisasi</a>
+                <a href="galeri.html" class="hover:text-primary transition-colors">Galeri</a>
+                <a href="kontak.html" class="hover:text-primary transition-colors">Kontak</a>
+            </div>
+
+            <div class="text-xs text-on-surface-variant text-center md:text-right">
+                <p>© 2026 Chef Muhammad Mirza. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Shared Interactivity Script -->
+    <script src="script.js"></script>
+</body>
+</html>

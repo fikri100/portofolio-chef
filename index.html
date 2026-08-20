@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html class="dark scroll-smooth" lang="id">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Chef Muhammad Mirza | Commercial Food Stylist, Private Chef & Culinary Consultant</title>
+    <meta name="description" content="Portofolio resmi Chef Muhammad Mirza - Spesialis Commercial Food Stylist, Exclusive Private Chef untuk Fine Dining, dan Konsultan Kuliner Mondelez."/>
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#e9c176",
+                        "primary-container": "#c5a059",
+                        "on-primary": "#412d00",
+                        "surface": "#131313",
+                        "surface-low": "#1b1c1c",
+                        "surface-high": "#2a2a2a",
+                        "surface-variant": "#353535",
+                        "on-surface": "#e4e2e1",
+                        "on-surface-variant": "#d1c5b4",
+                        "outline": "#9a8f80",
+                        "outline-variant": "#4e4639"
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="styles.css"/>
+</head>
+<body class="bg-surface text-on-surface min-h-screen flex flex-col antialiased selection:bg-primary-container selection:text-on-primary">
+
+    <!-- Top Navigation Header -->
+    <header class="fixed top-0 w-full z-50 glass-header flex justify-between items-center px-6 md:px-16 h-20 transition-all duration-300">
+        <a href="index.html" class="flex items-center gap-3 group">
+            <div class="w-10 h-10 rounded-full border border-primary/50 flex items-center justify-center bg-surface-high group-hover:border-primary transition-colors">
+                <span class="material-symbols-outlined text-primary text-xl">restaurant</span>
+            </div>
+            <div>
+                <span class="font-serif font-bold text-xl tracking-wider text-primary block leading-none">M. MIRZA</span>
+                <span class="text-[10px] tracking-widest uppercase text-on-surface-variant block mt-1">Food Stylist • Private Chef • Consultant</span>
+            </div>
+        </a>
+
+        <!-- Desktop Links -->
+        <nav class="hidden md:flex items-center gap-8 text-sm uppercase tracking-wider font-medium">
+            <a href="index.html" class="nav-link desktop-nav-link text-primary font-semibold hover:text-primary transition-colors">Beranda</a>
+            <a href="tentang-saya.html" class="nav-link desktop-nav-link text-on-surface-variant hover:text-primary transition-colors">Tentang Saya</a>
+            <a href="spesialisasi.html" class="nav-link desktop-nav-link text-on-surface-variant hover:text-primary transition-colors">Spesialisasi</a>
+            <a href="galeri.html" class="nav-link desktop-nav-link text-on-surface-variant hover:text-primary transition-colors">Galeri</a>
+            <a href="kontak.html" class="nav-link desktop-nav-link text-on-surface-variant hover:text-primary transition-colors">Layanan & Kontak</a>
+        </nav>
+
+        <div class="hidden md:flex items-center gap-4">
+            <a href="kontak.html" class="bg-primary text-on-primary text-xs uppercase font-bold tracking-widest px-5 py-2.5 rounded hover:brightness-110 active:scale-95 transition-all">
+                Booking Chef
+            </a>
+        </div>
+    </header>
+
+    <!-- Mobile Bottom Navigation Bar -->
+    <nav class="md:hidden fixed bottom-0 left-0 w-full bg-surface-low/95 backdrop-blur-lg border-t border-outline-variant py-2 px-3 z-50 flex justify-around items-center">
+        <a href="index.html" class="nav-link bottom-nav-link flex flex-col items-center justify-center text-on-surface-variant hover:text-primary transition-colors active:scale-95">
+            <span class="material-symbols-outlined text-xl">home</span>
+            <span class="text-[10px] uppercase tracking-wider mt-0.5">Beranda</span>
+        </a>
+        <a href="tentang-saya.html" class="nav-link bottom-nav-link flex flex-col items-center justify-center text-on-surface-variant hover:text-primary transition-colors active:scale-95">
+            <span class="material-symbols-outlined text-xl">person</span>
+            <span class="text-[10px] uppercase tracking-wider mt-0.5">Tentang</span>
+        </a>
+        <a href="spesialisasi.html" class="nav-link bottom-nav-link flex flex-col items-center justify-center text-on-surface-variant hover:text-primary transition-colors active:scale-95">
+            <span class="material-symbols-outlined text-xl">star</span>
+            <span class="text-[10px] uppercase tracking-wider mt-0.5">Spesialisasi</span>
+        </a>
+        <a href="galeri.html" class="nav-link bottom-nav-link flex flex-col items-center justify-center text-on-surface-variant hover:text-primary transition-colors active:scale-95">
+            <span class="material-symbols-outlined text-xl">restaurant</span>
+            <span class="text-[10px] uppercase tracking-wider mt-0.5">Galeri</span>
+        </a>
+        <a href="kontak.html" class="nav-link bottom-nav-link flex flex-col items-center justify-center text-on-surface-variant hover:text-primary transition-colors active:scale-95">
+            <span class="material-symbols-outlined text-xl">mail</span>
+            <span class="text-[10px] uppercase tracking-wider mt-0.5">Kontak</span>
+        </a>
+    </nav>
+
+    <main class="flex-grow pt-20">
+        <!-- Hero Section -->
+        <section class="relative w-full min-h-[90vh] flex items-center justify-center overflow-hidden">
+            <div class="absolute inset-0 z-0">
+                <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=1920&q=80" 
+                     alt="Cinematic Dark Fine Dining Preparation" 
+                     class="w-full h-full object-cover object-center transform hover:scale-105 transition-transform duration-1000">
+                <div class="absolute inset-0 scrim-gradient z-10"></div>
+            </div>
+
+            <div class="relative z-20 max-w-5xl px-6 md:px-12 py-20 text-center flex flex-col items-center">
+                <div class="inline-flex items-center gap-2 border border-primary/40 bg-surface/60 backdrop-blur-md px-4 py-1.5 rounded-full mb-6 reveal">
+                    <span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
+                    <span class="text-xs font-semibold text-primary uppercase tracking-widest">Private Chef & Commercial Food Stylist</span>
+                </div>
+
+                <h1 class="font-serif text-4xl md:text-6xl lg:text-7xl font-bold text-on-surface leading-tight mb-6 reveal delay-100 drop-shadow-2xl">
+                    Menghadirkan Pengalaman Private Chef & Seni Kuliner Berkelas
+                </h1>
+
+                <p class="text-base md:text-xl text-on-surface-variant max-w-3xl mb-10 leading-relaxed reveal delay-200">
+                    Layanan <strong class="text-primary font-bold">Exclusive Private Chef</strong> untuk fine dining privat, penataan visual makanan (<em class="text-primary italic">Food Styling</em>) komersial, serta konsultasi teknis kuliner profesional.
+                </p>
+
+                <div class="flex flex-col sm:flex-row gap-4 reveal delay-300 w-full sm:w-auto">
+                    <a href="kontak.html" class="bg-primary text-on-primary font-semibold text-sm uppercase tracking-wider px-8 py-4 rounded hover:brightness-110 active:scale-95 transition-all text-center border border-primary">
+                        Reservasi Private Chef
+                    </a>
+                    <a href="galeri.html" class="bg-surface-variant/80 text-on-surface font-semibold text-sm uppercase tracking-wider px-8 py-4 rounded border border-outline hover:bg-surface-high hover:border-primary active:scale-95 transition-all text-center backdrop-blur-md">
+                        Lihat Galeri Portfolio
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Stat Highlights Banner -->
+        <section class="w-full bg-surface-low border-y border-outline-variant py-10 px-4 md:px-8">
+            <div class="max-w-7xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6 text-center">
+                <div class="reveal">
+                    <span class="font-serif text-2xl sm:text-3xl lg:text-4xl font-bold text-primary block whitespace-nowrap">18+ Tahun</span>
+                    <span class="text-xs uppercase tracking-wider text-on-surface-variant mt-1 block">Pengalaman Seni Kuliner</span>
+                </div>
+                <div class="reveal delay-100">
+                    <span class="font-serif text-2xl sm:text-3xl lg:text-4xl font-bold text-primary block whitespace-nowrap">Private Chef</span>
+                    <span class="text-xs uppercase tracking-wider text-on-surface-variant mt-1 block">Layanan Fine Dining Privat</span>
+                </div>
+                <div class="reveal delay-200">
+                    <span class="font-serif text-2xl sm:text-3xl lg:text-4xl font-bold text-primary block whitespace-nowrap">Food Stylist</span>
+                    <span class="text-xs uppercase tracking-wider text-on-surface-variant mt-1 block">Spesialis Visual Media & Iklan</span>
+                </div>
+                <div class="reveal delay-300">
+                    <span class="font-serif text-2xl sm:text-3xl lg:text-4xl font-bold text-primary block whitespace-nowrap">Food Consultant</span>
+                    <span class="text-xs uppercase tracking-wider text-on-surface-variant mt-1 block">Konsultasi Teknis & Produk Kuliner</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Bento Grid Highlight Section -->
+        <section class="w-full max-w-7xl mx-auto px-6 md:px-12 py-24">
+            <div class="text-center mb-16 reveal">
+                <span class="text-xs font-semibold uppercase tracking-widest text-primary block mb-2">Mastery & Technique</span>
+                <h2 class="font-serif text-3xl md:text-5xl font-bold text-on-surface mb-4">Keahlian & Layanan Kuliner</h2>
+                <div class="w-16 h-[1px] bg-primary mx-auto"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 auto-rows-[340px]">
+                <!-- Tile 1: Private Chef Dining Experience -->
+                <div class="md:col-span-2 relative group overflow-hidden rounded-lg bg-surface-high border border-outline-variant reveal">
+                    <img src="https://images.unsplash.com/photo-1550966871-3ed3cdb5ed0c?auto=format&fit=crop&w=1200&q=80" 
+                         alt="Private Chef Dining Experience" 
+                         class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+                    <div class="absolute inset-0 bg-gradient-to-t from-surface via-surface/40 to-transparent"></div>
+                    <div class="absolute bottom-0 left-0 p-8 w-full">
+                        <span class="px-3 py-1 bg-primary/20 border border-primary/50 rounded-full text-xs font-semibold text-primary mb-3 inline-block uppercase tracking-wider">Layanan Utama</span>
+                        <h3 class="font-serif text-2xl md:text-3xl font-bold text-on-surface mb-2">Exclusive Private Chef Service</h3>
+                        <p class="text-sm text-on-surface-variant max-w-xl line-clamp-2">
+                            Menyajikannya pengalaman santap <em class="italic font-serif text-on-surface font-medium">Fine Dining</em> privat yang intim dan mewah di hunian Anda. Menu eksklusif dirancang khusus dengan bahan terbaik dan peracikan langsung di tempat.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Tile 2: Commercial Food Styling -->
+                <div class="relative group overflow-hidden rounded-lg bg-surface-high border border-outline-variant reveal delay-100">
+                    <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=800&q=80" 
+                         alt="Food Styling Masterpiece" 
+                         class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+                    <div class="absolute inset-0 bg-gradient-to-t from-surface via-surface/40 to-transparent"></div>
+                    <div class="absolute bottom-0 left-0 p-6 w-full">
+                        <span class="text-xs text-primary font-semibold uppercase tracking-wider block mb-1">Visual Media & Iklan</span>
+                        <h3 class="font-serif text-xl font-bold text-on-surface">Commercial Food Styling</h3>
+                    </div>
+                </div>
+
+                <!-- Tile 3: Culinary Philosophy -->
+                <div class="relative group overflow-hidden rounded-lg bg-surface-low border border-outline-variant p-8 flex flex-col justify-between reveal delay-200 hover:border-primary/50 transition-colors">
+                    <div>
+                        <div class="w-12 h-12 rounded-full bg-primary/10 border border-primary/30 flex items-center justify-center text-primary mb-6">
+                            <span class="material-symbols-outlined text-2xl">dinner_dining</span>
+                        </div>
+                        <h3 class="font-serif text-2xl font-bold text-primary mb-3">Filosofi Private Chef</h3>
+                        <p class="text-sm text-on-surface-variant leading-relaxed">
+                            "Menjadi Private Chef berarti menghadirkan momen kuliner yang personal dan berkesan. Setiap detail hidangan disesuaikan khusus untuk memanjakan selera tamu istimewa Anda."
+                        </p>
+                    </div>
+                    <div class="pt-4 border-t border-outline-variant/40 flex justify-between items-center">
+                        <span class="text-xs uppercase text-primary tracking-wider font-semibold">Chef Mirza</span>
+                        <span class="font-serif italic text-xs text-on-surface-variant">Commercial Food Stylist</span>
+                    </div>
+                </div>
+
+                <!-- Tile 4: Technical Consulting & Fine Dining Plating -->
+                <div class="md:col-span-2 relative group overflow-hidden rounded-lg bg-surface-high border border-outline-variant reveal delay-300">
+                    <img src="https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=1200&q=80" 
+                         alt="Technical Chef & Fine Dining Plating" 
+                         class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+                    <div class="absolute inset-0 bg-gradient-to-t from-surface via-surface/50 to-transparent"></div>
+                    <div class="absolute bottom-0 left-0 p-8 w-full flex flex-col md:flex-row justify-between items-start md:items-end gap-4">
+                        <div>
+                            <span class="px-3 py-1 bg-surface-variant border border-outline rounded-full text-xs font-semibold text-on-surface-variant mb-3 inline-block">Grand Mercure & Mondelez Track</span>
+                            <h3 class="font-serif text-2xl font-bold text-on-surface">Appetizer Specialist & Technical Chef Consultant</h3>
+                        </div>
+                        <a href="spesialisasi.html" class="w-12 h-12 rounded-full border border-primary flex items-center justify-center text-primary hover:bg-primary hover:text-on-primary transition-colors flex-shrink-0">
+                            <span class="material-symbols-outlined">arrow_forward</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Executive Summary Section -->
+        <section class="w-full bg-surface-low border-t border-outline-variant py-20 px-6">
+            <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-12 gap-12 items-center">
+                <div class="md:col-span-5 reveal">
+                    <div class="relative">
+                        <img src="https://images.unsplash.com/photo-1577219491135-ce391730fb2c?auto=format&fit=crop&w=800&q=80" 
+                             alt="Chef Muhammad Mirza Portrait" 
+                             class="rounded-lg border border-outline-variant shadow-2xl w-full object-cover h-[450px]">
+                        <div class="absolute -bottom-6 -right-6 bg-surface-high border border-primary/50 p-4 rounded-lg shadow-xl hidden sm:block">
+                            <span class="text-xs uppercase text-primary tracking-widest font-bold block">Pengalaman Industri</span>
+                            <span class="font-serif text-base text-on-surface font-semibold block">18+ Tahun Karir Kuliner</span>
+                            <span class="text-xs text-on-surface-variant">Sejak 2005 di Industri Kuliner</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="md:col-span-7 flex flex-col justify-center reveal delay-100">
+                    <span class="text-xs font-semibold uppercase tracking-widest text-primary mb-2">Tentang Chef Mirza</span>
+                    <h2 class="font-serif text-3xl md:text-4xl font-bold text-on-surface mb-6">
+                        Pengalaman Dapur Bintang Lima & Private Chef Eksklusif
+                    </h2>
+                    <p class="text-base text-on-surface-variant leading-relaxed mb-6">
+                        Perjalanan profesional <strong class="text-on-surface font-bold">Muhammad Mirza</strong> dibentuk oleh etos kerja dan pengalaman industri lebih dari 18 tahun sejak mengawali karir dan pendidikannya di bidang seni kuliner pada tahun 2005.
+                    </p>
+                    <p class="text-base text-on-surface-variant leading-relaxed mb-8">
+                        Selain pengalamannya di hotel ternama seperti Shangri-La, Aryaduta, Grand Mercure Harmoni, Mondelez, dan Gudang Garam, Chef Mirza kini secara aktif melayani sebagai <strong class="text-primary font-bold">Private Chef</strong> untuk santap malam eksklusif, katering acara privat, serta penataan visual makanan (<em class="text-primary italic">Food Styling</em>) iklan komersial.
+                    </p>
+
+                    <div class="flex gap-4">
+                        <a href="tentang-saya.html" class="bg-primary text-on-primary font-semibold text-xs uppercase tracking-widest px-6 py-3.5 rounded hover:brightness-110 transition-all">
+                            Baca Profil Selengkapnya
+                        </a>
+                        <a href="kontak.html" class="border border-outline text-on-surface hover:border-primary hover:text-primary font-semibold text-xs uppercase tracking-widest px-6 py-3.5 rounded transition-all">
+                            Reservasi Private Chef
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Callout Section -->
+        <section class="w-full py-24 px-6 relative overflow-hidden bg-gradient-to-r from-surface-low via-surface-high to-surface-low border-t border-outline-variant">
+            <div class="max-w-4xl mx-auto text-center relative z-10 reveal">
+                <span class="text-xs uppercase font-semibold text-primary tracking-widest block mb-3">Layanan Eksklusif</span>
+                <h2 class="font-serif text-3xl md:text-5xl font-bold text-on-surface mb-6">
+                    Ingin Menghadirkan Private Chef di Acara Istimewa Anda?
+                </h2>
+                <p class="text-base text-on-surface-variant max-w-2xl mx-auto mb-10">
+                    Nikmati sajian khas fine dining yang diracik khusus untuk jamuan privat, makan malam VIP, atau kebutuhan visual komersial brand Anda.
+                </p>
+                <a href="kontak.html" class="inline-block bg-primary text-on-primary font-bold text-sm uppercase tracking-widest px-10 py-4 rounded hover:brightness-110 active:scale-95 transition-all shadow-xl">
+                    Hubungi & Reservasi Private Chef
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="w-full bg-surface-low border-t border-outline-variant py-12 px-6 pb-28 md:pb-12">
+        <div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center text-center md:text-left gap-8">
+            <div class="flex flex-col items-center md:items-start">
+                <span class="font-serif font-bold text-xl text-primary block">CHEF MUHAMMAD MIRZA</span>
+                <p class="text-xs text-on-surface-variant mt-1">Commercial Food Stylist • Private Chef • Culinary Consultant</p>
+            </div>
+
+            <div class="flex flex-wrap justify-center items-center gap-4 sm:gap-6 md:gap-8 text-xs uppercase tracking-wider text-on-surface-variant">
+                <a href="index.html" class="hover:text-primary transition-colors">Beranda</a>
+                <a href="tentang-saya.html" class="hover:text-primary transition-colors">Tentang Saya</a>
+                <a href="spesialisasi.html" class="hover:text-primary transition-colors">Spesialisasi</a>
+                <a href="galeri.html" class="hover:text-primary transition-colors">Galeri</a>
+                <a href="kontak.html" class="hover:text-primary transition-colors">Kontak</a>
+            </div>
+
+            <div class="text-xs text-on-surface-variant text-center md:text-right">
+                <p>© 2026 Chef Muhammad Mirza. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Shared Interactivity Script -->
+    <script src="script.js"></script>
+</body>
+</html>

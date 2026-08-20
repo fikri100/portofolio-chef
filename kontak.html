@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html class="dark scroll-smooth" lang="id">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Layanan Private Chef & Kontak | Chef Muhammad Mirza</title>
+    <meta name="description" content="Hubungi Chef Muhammad Mirza untuk reservasi Exclusive Private Chef Fine Dining, Food Styling Komersial, Konsultasi Teknis Mondelez, dan Cooking Demo."/>
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#e9c176",
+                        "primary-container": "#c5a059",
+                        "on-primary": "#412d00",
+                        "surface": "#131313",
+                        "surface-low": "#1b1c1c",
+                        "surface-high": "#2a2a2a",
+                        "surface-variant": "#353535",
+                        "on-surface": "#e4e2e1",
+                        "on-surface-variant": "#d1c5b4",
+                        "outline": "#9a8f80",
+                        "outline-variant": "#4e4639"
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="styles.css"/>
+</head>
+<body class="bg-surface text-on-surface min-h-screen flex flex-col antialiased selection:bg-primary-container selection:text-on-primary">
+
+    <!-- Top Navigation Header -->
+    <header class="fixed top-0 w-full z-50 glass-header flex justify-between items-center px-6 md:px-16 h-20 transition-all duration-300">
+        <a href="index.html" class="flex items-center gap-3 group">
+            <div class="w-10 h-10 rounded-full border border-primary/50 flex items-center justify-center bg-surface-high group-hover:border-primary transition-colors">
+                <span class="material-symbols-outlined text-primary text-xl">restaurant</span>
+            </div>
+            <div>
+                <span class="font-serif font-bold text-xl tracking-wider text-primary block leading-none">M. MIRZA</span>
+                <span class="text-[10px] tracking-widest uppercase text-on-surface-variant block mt-1">Food Stylist • Private Chef • Consultant</span>
+            </div>
+        </a>
+
+        <!-- Desktop Links -->
+        <nav class="hidden md:flex items-center gap-8 text-sm uppercase tracking-wider font-medium">
+            <a href="index.html" class="nav-link desktop-nav-link text-on-surface-variant hover:text-primary transition-colors">Beranda</a>
+            <a href="tentang-saya.html" class="nav-link desktop-nav-link text-on-surface-variant hover:text-primary transition-colors">Tentang Saya</a>
+            <a href="spesialisasi.html" class="nav-link desktop-nav-link text-on-surface-variant hover:text-primary transition-colors">Spesialisasi</a>
+            <a href="galeri.html" class="nav-link desktop-nav-link text-on-surface-variant hover:text-primary transition-colors">Galeri</a>
+            <a href="kontak.html" class="nav-link desktop-nav-link text-primary font-semibold hover:text-primary transition-colors">Layanan & Kontak</a>
+        </nav>
+
+        <div class="hidden md:flex items-center gap-4">
+            <a href="kontak.html" class="bg-primary text-on-primary text-xs uppercase font-bold tracking-widest px-5 py-2.5 rounded hover:brightness-110 active:scale-95 transition-all">
+                Booking Chef
+            </a>
+        </div>
+    </header>
+
+    <!-- Mobile Bottom Navigation Bar -->
+    <nav class="md:hidden fixed bottom-0 left-0 w-full bg-surface-low/95 backdrop-blur-lg border-t border-outline-variant py-2 px-3 z-50 flex justify-around items-center">
+        <a href="index.html" class="nav-link bottom-nav-link flex flex-col items-center justify-center text-on-surface-variant hover:text-primary transition-colors active:scale-95">
+            <span class="material-symbols-outlined text-xl">home</span>
+            <span class="text-[10px] uppercase tracking-wider mt-0.5">Beranda</span>
+        </a>
+        <a href="tentang-saya.html" class="nav-link bottom-nav-link flex flex-col items-center justify-center text-on-surface-variant hover:text-primary transition-colors active:scale-95">
+            <span class="material-symbols-outlined text-xl">person</span>
+            <span class="text-[10px] uppercase tracking-wider mt-0.5">Tentang</span>
+        </a>
+        <a href="spesialisasi.html" class="nav-link bottom-nav-link flex flex-col items-center justify-center text-on-surface-variant hover:text-primary transition-colors active:scale-95">
+            <span class="material-symbols-outlined text-xl">star</span>
+            <span class="text-[10px] uppercase tracking-wider mt-0.5">Spesialisasi</span>
+        </a>
+        <a href="galeri.html" class="nav-link bottom-nav-link flex flex-col items-center justify-center text-on-surface-variant hover:text-primary transition-colors active:scale-95">
+            <span class="material-symbols-outlined text-xl">restaurant</span>
+            <span class="text-[10px] uppercase tracking-wider mt-0.5">Galeri</span>
+        </a>
+        <a href="kontak.html" class="nav-link bottom-nav-link flex flex-col items-center justify-center text-on-surface-variant hover:text-primary transition-colors active:scale-95">
+            <span class="material-symbols-outlined text-xl">mail</span>
+            <span class="text-[10px] uppercase tracking-wider mt-0.5">Kontak</span>
+        </a>
+    </nav>
+
+    <main class="flex-grow pt-24 pb-24">
+        <!-- Hero Title -->
+        <section class="w-full max-w-5xl mx-auto px-6 text-center py-12 reveal">
+            <span class="text-xs font-semibold uppercase tracking-widest text-primary block mb-3">Reservasi & Konsultasi</span>
+            <h1 class="font-serif text-4xl md:text-6xl font-bold text-on-surface mb-6 leading-tight">
+                Hubungi Chef Muhammad Mirza
+            </h1>
+            <p class="text-base md:text-lg text-on-surface-variant max-w-2xl mx-auto leading-relaxed">
+                Siap melayani reservasi <strong class="text-primary font-bold">Exclusive Private Chef</strong> jamuan makan privat, penataan makanan komersial (<em class="italic text-primary">food styling</em>), konsultan kuliner, hingga live cooking demo.
+            </p>
+        </section>
+
+        <!-- Services Cards Section -->
+        <section class="w-full max-w-6xl mx-auto px-6 md:px-12 mb-20">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                
+                <!-- Service 1: Private Chef -->
+                <div class="bg-surface-high border border-outline-variant p-8 rounded-xl reveal flex flex-col justify-between hover:border-primary/50 transition-colors">
+                    <div>
+                        <div class="w-14 h-14 rounded-full bg-primary/10 border border-primary/40 flex items-center justify-center text-primary mb-6">
+                            <span class="material-symbols-outlined text-3xl">dinner_dining</span>
+                        </div>
+                        <h3 class="font-serif text-2xl font-bold text-on-surface mb-3">Exclusive Private Chef</h3>
+                        <p class="text-sm text-on-surface-variant leading-relaxed mb-6">
+                            Layanan Private Chef pribadi untuk santap malam <em class="italic text-on-surface font-medium">fine dining</em> privat, racikan <em class="italic text-primary">bespoke tasting menu</em>, dan pelayanan fine dining mewah di tempat Anda.
+                        </p>
+                    </div>
+                    <ul class="text-xs text-on-surface-variant space-y-2 pt-4 border-t border-outline-variant/40">
+                        <li class="flex items-center gap-2">
+                            <span class="material-symbols-outlined text-primary text-sm">check</span>
+                            <span>Bespoke Multi-Course Fine Dining</span>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <span class="material-symbols-outlined text-primary text-sm">check</span>
+                            <span>Jamuan Intim Rumah / Venue Privat</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Service 2: Food Styling -->
+                <div class="bg-surface-high border border-outline-variant p-8 rounded-xl reveal delay-100 flex flex-col justify-between hover:border-primary/50 transition-colors">
+                    <div>
+                        <div class="w-14 h-14 rounded-full bg-primary/10 border border-primary/40 flex items-center justify-center text-primary mb-6">
+                            <span class="material-symbols-outlined text-3xl">photo_camera</span>
+                        </div>
+                        <h3 class="font-serif text-2xl font-bold text-on-surface mb-3">Commercial Food Styling</h3>
+                        <p class="text-sm text-on-surface-variant leading-relaxed mb-6">
+                            Penataan visual makanan profesional untuk fotografi komersial, shooting iklan TV, buku resep, spanduk promosi, dan konten media digital.
+                        </p>
+                    </div>
+                    <ul class="text-xs text-on-surface-variant space-y-2 pt-4 border-t border-outline-variant/40">
+                        <li class="flex items-center gap-2">
+                            <span class="material-symbols-outlined text-primary text-sm">check</span>
+                            <span>Studio Lighting & Camera Ready Staging</span>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <span class="material-symbols-outlined text-primary text-sm">check</span>
+                            <span>Presisi Kesegaran Bahan Visual</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Service 3: Technical Consulting & Demo -->
+                <div class="bg-surface-high border border-outline-variant p-8 rounded-xl reveal delay-200 flex flex-col justify-between hover:border-primary/50 transition-colors">
+                    <div>
+                        <div class="w-14 h-14 rounded-full bg-primary/10 border border-primary/40 flex items-center justify-center text-primary mb-6">
+                            <span class="material-symbols-outlined text-3xl">biotech</span>
+                        </div>
+                        <h3 class="font-serif text-2xl font-bold text-on-surface mb-3">Consulting & Cooking Demo</h3>
+                        <p class="text-sm text-on-surface-variant leading-relaxed mb-6">
+                            Konsultasi riset formulasi resep (Mondelez methodology) serta pimpinan atraksi demonstrasi memasak panggung event publik (PRJ Indofood track).
+                        </p>
+                    </div>
+                    <ul class="text-xs text-on-surface-variant space-y-2 pt-4 border-t border-outline-variant/40">
+                        <li class="flex items-center gap-2">
+                            <span class="material-symbols-outlined text-primary text-sm">check</span>
+                            <span>R&D Formulasi Resep & Produk</span>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <span class="material-symbols-outlined text-primary text-sm">check</span>
+                            <span>Public Stage Live Cooking Demo</span>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Main Contact & Form Section -->
+        <section class="w-full max-w-6xl mx-auto px-6 md:px-12">
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-12">
+                
+                <!-- Contact Info Panel -->
+                <div class="md:col-span-5 reveal">
+                    <div class="bg-surface-low border border-outline-variant p-8 rounded-xl space-y-8">
+                        <div>
+                            <span class="text-xs uppercase tracking-widest text-primary font-bold block mb-1">Informasi Kontak Direct</span>
+                            <h3 class="font-serif text-2xl font-bold text-on-surface">Hubungi Langsung</h3>
+                            <div class="w-12 h-[1px] bg-primary mt-3"></div>
+                        </div>
+
+                        <!-- Email Item -->
+                        <div class="flex items-start gap-4">
+                            <div class="w-10 h-10 rounded-full bg-surface-high border border-outline-variant flex items-center justify-center text-primary flex-shrink-0">
+                                <span class="material-symbols-outlined text-xl">mail</span>
+                            </div>
+                            <div>
+                                <span class="text-xs text-on-surface-variant uppercase tracking-wider block">Alamat Email</span>
+                                <a href="mailto:mirza.991990@gmail.com" class="font-medium text-on-surface hover:text-primary transition-colors text-base">
+                                    mirza.991990@gmail.com
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Phone / WhatsApp Item -->
+                        <div class="flex items-start gap-4">
+                            <div class="w-10 h-10 rounded-full bg-surface-high border border-outline-variant flex items-center justify-center text-primary flex-shrink-0">
+                                <span class="material-symbols-outlined text-xl">phone</span>
+                            </div>
+                            <div>
+                                <span class="text-xs text-on-surface-variant uppercase tracking-wider block">Telepon / WhatsApp</span>
+                                <a href="tel:085692418337" class="font-medium text-on-surface hover:text-primary transition-colors text-base block">
+                                    0856-9241-8337
+                                </a>
+                                <a href="tel:087883050542" class="font-medium text-on-surface hover:text-primary transition-colors text-base block">
+                                    0878-8305-0542
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Location Item -->
+                        <div class="flex items-start gap-4">
+                            <div class="w-10 h-10 rounded-full bg-surface-high border border-outline-variant flex items-center justify-center text-primary flex-shrink-0">
+                                <span class="material-symbols-outlined text-xl">location_on</span>
+                            </div>
+                            <div>
+                                <span class="text-xs text-on-surface-variant uppercase tracking-wider block">Alamat Domisili</span>
+                                <p class="text-sm text-on-surface leading-relaxed mt-1">
+                                    Jl. Kayu Putih Selatan VI F no. 24, Rt. 002/Rw. 005, Jakarta Timur 13260
+                                </p>
+                                <span class="inline-block mt-2 text-[11px] bg-primary/20 text-primary px-2.5 py-0.5 rounded border border-primary/40">
+                                    Menerima Layanan Seluruh Indonesia
+                                </span>
+                            </div>
+                        </div>
+
+                        <!-- Professional Credentials -->
+                        <div class="p-4 bg-surface-high border border-outline-variant/60 rounded-lg">
+                            <span class="text-xs font-serif italic text-primary block">Kualifikasi Profesional:</span>
+                            <p class="text-xs text-on-surface-variant mt-1">
+                                Pengalaman lebih dari 18 tahun di industri kuliner perhotelan, commercial food styling, dan konsultan teknis.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Interactive Booking Form -->
+                <div class="md:col-span-7 reveal delay-100">
+                    <div class="bg-surface-high border border-outline-variant p-8 md:p-10 rounded-xl">
+                        <h3 class="font-serif text-2xl font-bold text-on-surface mb-2">Formulir Reservasi & Inkuiri</h3>
+                        <p class="text-xs text-on-surface-variant mb-8">Isi formulir di bawah ini untuk mendiskusikan jadwal Private Chef atau Food Styling Anda.</p>
+
+                        <form id="contact-form" class="space-y-6">
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                                <div>
+                                    <label class="block text-xs font-semibold uppercase tracking-wider text-on-surface-variant mb-2" for="name">
+                                        Nama Lengkap *
+                                    </label>
+                                    <input type="text" id="name" required placeholder="Masukkan nama Anda" 
+                                           class="w-full bg-surface-low border border-outline-variant rounded px-4 py-3 text-sm text-on-surface focus:outline-none focus:border-primary transition-colors">
+                                </div>
+                                <div>
+                                    <label class="block text-xs font-semibold uppercase tracking-wider text-on-surface-variant mb-2" for="email">
+                                        Alamat Email *
+                                    </label>
+                                    <input type="email" id="email" required placeholder="contoh@email.com" 
+                                           class="w-full bg-surface-low border border-outline-variant rounded px-4 py-3 text-sm text-on-surface focus:outline-none focus:border-primary transition-colors">
+                                </div>
+                            </div>
+
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                                <div>
+                                    <label class="block text-xs font-semibold uppercase tracking-wider text-on-surface-variant mb-2" for="phone">
+                                        No. Handphone / WA *
+                                    </label>
+                                    <input type="tel" id="phone" required placeholder="0812xxxxxxx" 
+                                           class="w-full bg-surface-low border border-outline-variant rounded px-4 py-3 text-sm text-on-surface focus:outline-none focus:border-primary transition-colors">
+                                </div>
+                                <div>
+                                    <label class="block text-xs font-semibold uppercase tracking-wider text-on-surface-variant mb-2" for="service">
+                                        Kategori Layanan *
+                                    </label>
+                                    <select id="service" required class="w-full bg-surface-low border border-outline-variant rounded px-4 py-3 text-sm text-on-surface focus:outline-none focus:border-primary transition-colors">
+                                        <option value="">Pilih Layanan</option>
+                                        <option value="private-chef">Exclusive Private Chef (Fine Dining Privat)</option>
+                                        <option value="food-styling">Commercial Food Styling (Fotografi/Iklan)</option>
+                                        <option value="consulting">Technical Culinary Consulting (R&D/Produk)</option>
+                                        <option value="demo">Live Cooking Demo & Event</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div>
+                                <label class="block text-xs font-semibold uppercase tracking-wider text-on-surface-variant mb-2" for="message">
+                                    Detail Acara / Pesan *
+                                </label>
+                                <textarea id="message" rows="5" required placeholder="Jelaskan rencana tanggal acara, jumlah tamu fine dining, lokasi privat, atau kebutuhan penataan makanan yang diinginkan..." 
+                                          class="w-full bg-surface-low border border-outline-variant rounded px-4 py-3 text-sm text-on-surface focus:outline-none focus:border-primary transition-colors"></textarea>
+                            </div>
+
+                            <button type="submit" class="w-full bg-primary text-on-primary font-bold text-sm uppercase tracking-widest py-4 rounded hover:brightness-110 active:scale-95 transition-all shadow-xl">
+                                Kirim Inkuiri / Reservasi
+                            </button>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Toast Notification -->
+        <div id="toast-notification" class="fixed bottom-24 md:bottom-8 right-8 z-50 transform translate-y-20 opacity-0 transition-all duration-300 ease-in-out">
+            <div class="bg-surface-high border border-primary text-on-surface px-6 py-4 rounded-lg shadow-2xl flex items-center gap-3">
+                <span class="material-symbols-outlined text-primary text-2xl">check_circle</span>
+                <div>
+                    <span class="font-serif font-bold text-primary block">Pesan Terkirim!</span>
+                    <span class="text-xs text-on-surface-variant">Terima kasih. Chef Mirza akan segera menghubungi Anda kembali.</span>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="w-full bg-surface-low border-t border-outline-variant py-12 px-6 pb-28 md:pb-12">
+        <div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center text-center md:text-left gap-8">
+            <div class="flex flex-col items-center md:items-start">
+                <span class="font-serif font-bold text-xl text-primary block">CHEF MUHAMMAD MIRZA</span>
+                <p class="text-xs text-on-surface-variant mt-1">Commercial Food Stylist • Private Chef • Culinary Consultant</p>
+            </div>
+
+            <div class="flex flex-wrap justify-center items-center gap-4 sm:gap-6 md:gap-8 text-xs uppercase tracking-wider text-on-surface-variant">
+                <a href="index.html" class="hover:text-primary transition-colors">Beranda</a>
+                <a href="tentang-saya.html" class="hover:text-primary transition-colors">Tentang Saya</a>
+                <a href="spesialisasi.html" class="hover:text-primary transition-colors">Spesialisasi</a>
+                <a href="galeri.html" class="hover:text-primary transition-colors">Galeri</a>
+                <a href="kontak.html" class="hover:text-primary transition-colors">Kontak</a>
+            </div>
+
+            <div class="text-xs text-on-surface-variant text-center md:text-right">
+                <p>© 2026 Chef Muhammad Mirza. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Shared Interactivity Script -->
+    <script src="script.js"></script>
+</body>
+</html>
